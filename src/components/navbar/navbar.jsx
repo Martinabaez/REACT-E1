@@ -1,12 +1,17 @@
-import React from 'react'
+
+import React, { useContext, useEffect } from "react";
 import {
     HomeContainer,
     LinksContainer, 
     NavbarContainer,
 } from './styles'
 
+
+
+
+
 export const Navbar = () => {
-  return (
+ return (
     <NavbarContainer>
        <div>
     <a href="#">
@@ -15,11 +20,12 @@ export const Navbar = () => {
        </div>
            <LinksContainer>
            <HomeContainer>
-                <a href="/#">Inicio</a>
-                <a href="/#">Productos</a>
-                <a href="/#">Nosotros</a>
+                <a href="/">Inicio</a>
+                <a href="/products">Productos</a>
+                <a href="/about">Nosotros</a>
+                <a href="/contact">Contacto</a>
             </HomeContainer>
          </LinksContainer>
     </NavbarContainer>
-)
+ )
 }

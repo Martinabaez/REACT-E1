@@ -1,13 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-import { HomeScreen } from './screens/home_screen'
+import { GlobalStyle } from './components/styles/global_styles';
+import { Routes } from './routes/Routes';
+
+
 
 
 function App() {
-
-  return <HomeScreen/>
-      
-  
+  return (
+    <>
+      <Routes />
+      <GlobalStyle />
+    </>
+  );
 }
 
-export default App
+export default App;
